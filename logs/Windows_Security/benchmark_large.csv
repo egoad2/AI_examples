@@ -1,0 +1,4460 @@
+DateTime,Source,EventID,Category,Event
+18.11.2024. 20:19:01,Microsoft-Windows-Security-Auditing,4647,Logoff,"User initiated logoff:
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x12DA898
+
+This event is generated when a logoff is initiated. No further user-initiated activity can occur. This event can be interpreted as a logoff event."
+17.11.2024. 21:43:42,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x6ec
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	ANON_MACHINES_1
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+22.11.2024. 23:18:31,Microsoft-Windows-Eventlog,1101,Event processing,Audit events have been dropped by the transport.  0
+20.10.2024. 14:08:40,Microsoft-Windows-Security-Auditing,4648,Logon,"A logon was attempted using explicit credentials.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x87c
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Network Address:	127.0.0.1
+	Port:			0
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command."
+24.11.2024. 13:01:49,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Group:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_3\ANON_ANON_USERS_13_5
+	Group Name:		ANON_ANON_USERS_13_5
+	Group Domain:		ANON_DOMAINS_3
+
+Process Information:
+	Process ID:		0x1f68
+	Process Name:		C:\Windows\System32\VSSVC.exe"
+15.10.2024. 2:03:22,Microsoft-Windows-Security-Auditing,4696,Process Creation,"A primary token was assigned to process.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0x4
+	Process Name:	
+
+Target Process:
+	Target Process ID:	0x64
+	Target Process Name:	Registry
+
+New Token Information:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7"
+11.11.2024. 21:45:50,Microsoft-Windows-Security-Auditing,5058,Other System Events,"Key file operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x6E1C69A
+
+Process Information:
+	Process ID:		17952
+	Process Creation Time:	‎2024‎-‎11‎-‎11T20:45:45.394941200Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Key File Operation Information:
+	File Path:	C:\ANON_USERS_13\ANON_ANON_USERS_13_38\AppData\Local\Packages\microsoft.windows.search_cw5n1h2txyewy\AC\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_565506b2-4fbe-47a4-ba1f-dcaf980241a6_94010fb48af238f6ca3f233fc31d9c4f
+	Operation:	Read persisted key from file.
+	Return Code:	0x0"
+13.11.2024. 15:41:36,Microsoft-Windows-Security-Auditing,5382,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+This event occurs when a user reads a stored vault credential."
+16.11.2024. 20:56:34,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0xE7249DF
+
+User:
+	ANON_ANON_USERS_13_2		ANON_MACHINES_2\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+
+Process Information:
+	Process ID:		0x1ef8
+	Process Name:		C:\Windows\explorer.exe"
+16.11.2024. 11:27:40,Microsoft-Windows-Security-Auditing,5058,Other System Events,"Key file operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x356BA92
+
+Process Information:
+	Process ID:		17188
+	Process Creation Time:	‎2024‎-‎11‎-‎16T10:27:40.743490300Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	Microsoft Connected Devices Platform device certificate
+	Key Type:	User key.
+
+Key File Operation Information:
+	File Path:	C:\ANON_USERS_13\ANON_ANON_USERS_13_38\AppData\Roaming\Microsoft\Crypto\Keys\de7cf8a7901d2ad13e5c67c29e5d1662_565506b2-4fbe-47a4-ba1f-dcaf980241a6
+	Operation:	Read persisted key from file.
+	Return Code:	0x0"
+22.10.2024. 21:23:56,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+6.10.2024. 19:26:19,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x344
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+12.11.2024. 11:42:48,Microsoft-Windows-Security-Auditing,5382,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+This event occurs when a user reads a stored vault credential."
+8.11.2024. 1:08:47,Microsoft-Windows-Security-Auditing,4647,Logoff,"User initiated logoff:
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0x6ED34AC
+
+This event is generated when a logoff is initiated. No further user-initiated activity can occur. This event can be interpreted as a logoff event."
+22.11.2024. 17:22:18,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x6ec
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	ANON_MACHINES_1
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+9.11.2024. 1:03:29,Microsoft-Windows-Security-Auditing,4696,Process Creation,"A primary token was assigned to process.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0x4
+	Process Name:	
+
+Target Process:
+	Target Process ID:	0x84
+	Target Process Name:	Registry
+
+New Token Information:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7"
+14.11.2024. 20:57:19,Microsoft-Windows-Eventlog,1100,Service shutdown,The event logging service has shut down.
+17.10.2024. 16:09:02,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x308
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+20.11.2024. 14:06:26,Microsoft-Windows-Security-Auditing,4696,Process Creation,"A primary token was assigned to process.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0x4
+	Process Name:	
+
+Target Process:
+	Target Process ID:	0x64
+	Target Process Name:	Registry
+
+New Token Information:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7"
+7.11.2024. 8:09:21,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x4045E20
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer."
+16.11.2024. 21:40:21,Microsoft-Windows-Security-Auditing,4616,Security State Change,"The system time was changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		LOCAL SERVICE
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E5
+
+Process Information:
+	Process ID:	0x708
+	Name:		C:\Windows\System32\svchost.exe
+
+Previous Time:		‎2024‎-‎11‎-‎16T20:40:21.964876800Z
+New Time:		‎2024‎-‎11‎-‎16T20:40:21.964912300Z
+
+This event is generated when the system time is changed. It is normal for the Windows Time Service, which runs with System privilege, to change the system time on a regular basis. Other system time changes may be indicative of attempts to tamper with the computer."
+15.11.2024. 21:46:21,Microsoft-Windows-Security-Auditing,4907,Audit Policy Change,"Auditing settings on object were changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Object:
+	Object Server:	Security
+	Object Type:	File
+	Object Name:	C:\Windows\servicing\Packages\microsoft-windows-client-languagepack-package-Wrapper~31bf3856ad364e35~amd64~ar-SA~10.0.22621.4460.mum
+	Handle ID:	0x6f8
+
+Process Information:
+	Process ID:	0x4174
+	Process Name:	C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.22621.4383_none_e957b12c42d242a6\TiWorker.exe
+
+Auditing Settings:
+	Original Security Descriptor:	
+	New Security Descriptor:		S:ARAI(AU;SAFA;0x1f0116;;;WD)"
+5.11.2024. 10:18:29,Microsoft-Windows-Security-Auditing,5058,Other System Events,"Key file operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x15CD535
+
+Process Information:
+	Process ID:		3936
+	Process Creation Time:	‎2024‎-‎11‎-‎05T09:18:23.436485200Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Key File Operation Information:
+	File Path:	C:\ANON_USERS_13\ANON_ANON_USERS_13_38\AppData\Local\Packages\microsoft.windows.search_cw5n1h2txyewy\AC\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_565506b2-4fbe-47a4-ba1f-dcaf980241a6_94010fb48af238f6ca3f233fc31d9c4f
+	Operation:	Read persisted key from file.
+	Return Code:	0x0"
+24.11.2024. 13:01:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Group:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_3\ANON_ANON_USERS_13_5
+	Group Name:		ANON_ANON_USERS_13_5
+	Group Domain:		ANON_DOMAINS_3
+
+Process Information:
+	Process ID:		0x5cc
+	Process Name:		C:\Windows\System32\SrTasks.exe"
+16.11.2024. 20:33:17,Microsoft-Windows-Security-Auditing,4905,Audit Policy Change,"An attempt was made to unregister a security event source.
+
+Subject
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x14b8
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0xF51480E"
+2.11.2024. 15:03:06,Microsoft-Windows-Security-Auditing,4608,Security State Change,"Windows is starting up.
+
+This event is logged when LSASS.EXE starts and the auditing subsystem is initialized."
+15.10.2024. 2:02:51,Microsoft-Windows-Security-Auditing,4907,Audit Policy Change,"Auditing settings on object were changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Object:
+	Object Server:	Security
+	Object Type:	File
+	Object Name:	C:\Windows\SysWOW64\wer.dll
+	Handle ID:	0x9c
+
+Process Information:
+	Process ID:	0x12ac
+	Process Name:	C:\Windows\System32\poqexec.exe
+
+Auditing Settings:
+	Original Security Descriptor:	S:AINO_ACCESS_CONTROL
+	New Security Descriptor:		S:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)"
+30.10.2024. 21:43:17,Microsoft-Windows-Security-Auditing,5061,System Integrity,"Cryptographic operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x60CA810
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Cryptographic Operation:
+	Operation:	Create Key.
+	Return Code:	0x0"
+16.11.2024. 19:18:22,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0x1C6E85B
+	Read Operation:		Enumerate Credentials
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+16.11.2024. 9:46:00,Microsoft-Windows-Security-Auditing,4826,Other Policy Change Events,"Boot Configuration Data loaded.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+General Settings:
+	Load Options:		-
+	Advanced Options:		No
+	Configuration Access Policy:	Default
+	System Event Logging:	No
+	Kernel Debugging:	No
+	VSM Launch Type:	Off
+
+Signature Settings:
+	Test Signing:		No
+	Flight Signing:		No
+	Disable Integrity Checks:	No
+
+HyperVisor Settings:
+	HyperVisor Load Options:	-
+	HyperVisor Launch Type:	Off
+	HyperVisor Debugging:	No"
+22.11.2024. 23:18:30,Microsoft-Windows-Security-Auditing,4608,Security State Change,"Windows is starting up.
+
+This event is logged when LSASS.EXE starts and the auditing subsystem is initialized."
+22.11.2024. 17:23:26,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0xBD05081
+	Read Operation:		Enumerate Credentials
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+5.11.2024. 23:52:52,Microsoft-Windows-Security-Auditing,4647,Logoff,"User initiated logoff:
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x260D81E
+
+This event is generated when a logoff is initiated. No further user-initiated activity can occur. This event can be interpreted as a logoff event."
+2.11.2024. 15:03:12,Microsoft-Windows-Security-Auditing,5033,Other System Events,The Windows Firewall Driver started successfully.
+14.11.2024. 22:48:57,Microsoft-Windows-Security-Auditing,4608,Security State Change,"Windows is starting up.
+
+This event is logged when LSASS.EXE starts and the auditing subsystem is initialized."
+22.11.2024. 23:18:23,Microsoft-Windows-Security-Auditing,4696,Process Creation,"A primary token was assigned to process.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0x4
+	Process Name:	
+
+Target Process:
+	Target Process ID:	0x84
+	Target Process Name:	Registry
+
+New Token Information:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7"
+18.11.2024. 16:08:01,Microsoft-Windows-Security-Auditing,4647,Logoff,"User initiated logoff:
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x66C1F
+
+This event is generated when a logoff is initiated. No further user-initiated activity can occur. This event can be interpreted as a logoff event."
+23.11.2024. 13:15:38,Microsoft-Windows-Security-Auditing,4797,User Account Management,"An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0xBD05081
+
+Additional Information:
+	Caller Workstation:	ANON_MACHINES_1
+	Target Account Name:	Guest
+	Target Account Domain:	ANON_DOMAINS_1"
+14.11.2024. 22:48:57,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Target Subject:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x354
+	New Process Name:	C:\Windows\System32\LsaIso.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x2f8
+	Creator Process Name:	C:\Windows\System32\wininit.exe
+	Process Command Line:	
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the ANON_ANON_USERS_13_5 group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator."
+30.10.2024. 8:38:46,Microsoft-Windows-Security-Auditing,4616,Security State Change,"The system time was changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		LOCAL SERVICE
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E5
+
+Process Information:
+	Process ID:	0x2864
+	Name:		C:\Windows\System32\svchost.exe
+
+Previous Time:		‎2024‎-‎10‎-‎30T07:38:46.694288900Z
+New Time:		‎2024‎-‎10‎-‎30T07:38:46.694753900Z
+
+This event is generated when the system time is changed. It is normal for the Windows Time Service, which runs with System privilege, to change the system time on a regular basis. Other system time changes may be indicative of attempts to tamper with the computer."
+16.11.2024. 20:21:33,Microsoft-Windows-Security-Auditing,4648,Logon,"A logon was attempted using explicit credentials.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x78c
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Network Address:	127.0.0.1
+	Port:			0
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command."
+9.11.2024. 1:03:34,Microsoft-Windows-Security-Auditing,4608,Security State Change,"Windows is starting up.
+
+This event is logged when LSASS.EXE starts and the auditing subsystem is initialized."
+18.11.2024. 9:27:58,Microsoft-Windows-Security-Auditing,4826,Other Policy Change Events,"Boot Configuration Data loaded.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+General Settings:
+	Load Options:		-
+	Advanced Options:		No
+	Configuration Access Policy:	Default
+	System Event Logging:	No
+	Kernel Debugging:	No
+	VSM Launch Type:	Auto
+
+Signature Settings:
+	Test Signing:		No
+	Flight Signing:		No
+	Disable Integrity Checks:	No
+
+HyperVisor Settings:
+	HyperVisor Load Options:	-
+	HyperVisor Launch Type:	Auto
+	HyperVisor Debugging:	No"
+21.11.2024. 10:34:37,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Group:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_3\ANON_ANON_USERS_13_4
+	Group Name:		ANON_ANON_USERS_13_4
+	Group Domain:		ANON_DOMAINS_3
+
+Process Information:
+	Process ID:		0x1608
+	Process Name:		C:\Windows\System32\SrTasks.exe"
+21.11.2024. 10:34:49,Microsoft-Windows-Security-Auditing,4905,Audit Policy Change,"An attempt was made to unregister a security event source.
+
+Subject
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x3644
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0x5ED4B50"
+16.11.2024. 0:06:27,Microsoft-Windows-Security-Auditing,4907,Audit Policy Change,"Auditing settings on object were changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Object:
+	Object Server:	Security
+	Object Type:	File
+	Object Name:	C:\Windows\WinSxS\FileMaps\$$_systemapps_microsoftwindows.client.cbs_cw5n1h2txyewy_public_wsxpacks_settingssearchdata_it-it_ffb52883b0921f3b.cdf-ms
+	Handle ID:	0xc8
+
+Process Information:
+	Process ID:	0x47c4
+	Process Name:	C:\Windows\System32\poqexec.exe
+
+Auditing Settings:
+	Original Security Descriptor:	
+	New Security Descriptor:		S:ARAI(AU;SAFA;0x1f0116;;;WD)"
+16.11.2024. 0:07:07,Microsoft-Windows-Security-Auditing,6417,System Integrity,"The FIPS mode crypto selftests succeeded.
+
+	Process ID:		0x390
+	Process Name:		C:\Windows\System32\lsass.exe"
+16.11.2024. 9:46:05,Microsoft-Windows-Security-Auditing,4902,Audit Policy Change,"The Per-user audit policy table was created.
+
+Number of Elements:	0
+Policy ID:	0xE004"
+15.11.2024. 21:46:19,Microsoft-Windows-Security-Auditing,4907,Audit Policy Change,"Auditing settings on object were changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Object:
+	Object Server:	Security
+	Object Type:	File
+	Object Name:	C:\Windows\servicing\Packages\Microsoft-Windows-Ethernet-Client-Realtek-Rtcx21x64-FOD-Package-Wrapper~31bf3856ad364e35~amd64~~10.0.22621.4455.mum
+	Handle ID:	0x620
+
+Process Information:
+	Process ID:	0x4174
+	Process Name:	C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.22621.4383_none_e957b12c42d242a6\TiWorker.exe
+
+Auditing Settings:
+	Original Security Descriptor:	
+	New Security Descriptor:		S:ARAI(AU;SAFA;0x1f0116;;;WD)"
+14.11.2024. 20:55:14,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Target Subject:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x388
+	New Process Name:	C:\Windows\System32\lsass.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x324
+	Creator Process Name:	C:\Windows\System32\wininit.exe
+	Process Command Line:	
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the ANON_ANON_USERS_13_5 group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator."
+13.11.2024. 17:32:39,Microsoft-Windows-Security-Auditing,4904,Audit Policy Change,"An attempt was made to register a security event source.
+
+Subject :
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x20bc
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0xAFC2069"
+4.11.2024. 7:48:14,Microsoft-Windows-Security-Auditing,4608,Security State Change,"Windows is starting up.
+
+This event is logged when LSASS.EXE starts and the auditing subsystem is initialized."
+30.10.2024. 21:15:19,Microsoft-Windows-Security-Auditing,5382,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+This event occurs when a user reads a stored vault credential."
+15.10.2024. 2:02:49,Microsoft-Windows-Security-Auditing,4907,Audit Policy Change,"Auditing settings on object were changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Object:
+	Object Server:	Security
+	Object Type:	File
+	Object Name:	C:\Windows\WinSxS\FileMaps\$$_system32_speech_onecore_voiceactivation_57f72a0344e2d398.cdf-ms
+	Handle ID:	0x70
+
+Process Information:
+	Process ID:	0x12ac
+	Process Name:	C:\Windows\System32\poqexec.exe
+
+Auditing Settings:
+	Original Security Descriptor:	
+	New Security Descriptor:		S:ARAI(AU;SAFA;0x1f0116;;;WD)"
+17.11.2024. 11:33:05,Microsoft-Windows-Security-Auditing,4797,User Account Management,"The description for Event ID 4797 from source Microsoft-Windows-Security-Auditing cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.
+
+If the event originated on another computer, the display information had to be saved with the event.
+
+The following information was included with the event: 
+
+EV_RenderedValue_0,00
+ANON_ANON_USERS_13_38
+ANON_MACHINES_3
+90058033
+ANON_MACHINES_3
+Guest
+ANON_MACHINES_3
+
+The handle is invalid"
+27.10.2024. 14:58:00,Microsoft-Windows-Security-Auditing,4648,Logon,"A logon was attempted using explicit credentials.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x87c
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Network Address:	127.0.0.1
+	Port:			0
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command."
+15.10.2024. 2:02:50,Microsoft-Windows-Security-Auditing,4907,Audit Policy Change,"Auditing settings on object were changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Object:
+	Object Server:	Security
+	Object Type:	File
+	Object Name:	C:\Windows\System32\srcore.dll
+	Handle ID:	0x78
+
+Process Information:
+	Process ID:	0x12ac
+	Process Name:	C:\Windows\System32\poqexec.exe
+
+Auditing Settings:
+	Original Security Descriptor:	S:AINO_ACCESS_CONTROL
+	New Security Descriptor:		S:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)"
+24.11.2024. 13:00:13,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x35c
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+9.11.2024. 1:03:29,Microsoft-Windows-Security-Auditing,4826,Other Policy Change Events,"Boot Configuration Data loaded.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+General Settings:
+	Load Options:		-
+	Advanced Options:		No
+	Configuration Access Policy:	Default
+	System Event Logging:	No
+	Kernel Debugging:	No
+	VSM Launch Type:	Auto
+
+Signature Settings:
+	Test Signing:		No
+	Flight Signing:		No
+	Disable Integrity Checks:	No
+
+HyperVisor Settings:
+	HyperVisor Load Options:	-
+	HyperVisor Launch Type:	Auto
+	HyperVisor Debugging:	No"
+22.11.2024. 23:18:31,Microsoft-Windows-Security-Auditing,4902,Audit Policy Change,"The Per-user audit policy table was created.
+
+Number of Elements:	0
+Policy ID:	0xDAAE"
+21.11.2024. 20:48:59,Microsoft-Windows-Security-Auditing,5061,System Integrity,"Cryptographic operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0x9A3B07E
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	RSA
+	Key Name:	TB_0_office.com
+	Key Type:	User key.
+
+Cryptographic Operation:
+	Operation:	Open Key.
+	Return Code:	0x0"
+7.11.2024. 0:48:41,Microsoft-Windows-Security-Auditing,5058,Other System Events,"Key file operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x2B03249
+
+Process Information:
+	Process ID:		14152
+	Process Creation Time:	‎2024‎-‎11‎-‎06T23:48:41.171781900Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Key File Operation Information:
+	File Path:	C:\ANON_USERS_13\ANON_ANON_USERS_13_38\AppData\Roaming\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_565506b2-4fbe-47a4-ba1f-dcaf980241a6
+	Operation:	Write persisted key to file.
+	Return Code:	0x0"
+18.11.2024. 9:28:04,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+22.11.2024. 17:22:17,Microsoft-Windows-Security-Auditing,5061,System Integrity,"Cryptographic operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0xBD05081
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	RSA
+	Key Name:	TB_0_microsoft.com
+	Key Type:	User key.
+
+Cryptographic Operation:
+	Operation:	Open Key.
+	Return Code:	0x0"
+23.11.2024. 21:58:43,Microsoft-Windows-Security-Auditing,4797,User Account Management,"An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x21B7A76
+
+Additional Information:
+	Caller Workstation:	ANON_MACHINES_3
+	Target Account Name:	ANON_ANON_USERS_13_7
+	Target Account Domain:	ANON_DOMAINS_9"
+12.11.2024. 18:12:06,Microsoft-Windows-Security-Auditing,5381,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0xB1B0C2C
+
+This event occurs when a user enumerates stored vault credentials."
+14.11.2024. 20:55:12,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Target Subject:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x2b8
+	New Process Name:	C:\Windows\System32\wpbbin.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x1fc
+	Creator Process Name:	C:\Windows\System32\smss.exe
+	Process Command Line:	
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the ANON_ANON_USERS_13_5 group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator."
+14.11.2024. 22:49:04,Microsoft-Windows-Security-Auditing,5024,Other System Events,The Windows Firewall service started successfully.
+9.11.2024. 10:40:29,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+16.11.2024. 19:55:15,Microsoft-Windows-Security-Auditing,5381,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0xE7249DF
+
+This event occurs when a user enumerates stored vault credentials."
+14.11.2024. 22:48:52,Microsoft-Windows-Security-Auditing,4826,Other Policy Change Events,"Boot Configuration Data loaded.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+General Settings:
+	Load Options:		-
+	Advanced Options:		No
+	Configuration Access Policy:	Default
+	System Event Logging:	No
+	Kernel Debugging:	No
+	VSM Launch Type:	Auto
+
+Signature Settings:
+	Test Signing:		No
+	Flight Signing:		No
+	Disable Integrity Checks:	No
+
+HyperVisor Settings:
+	HyperVisor Load Options:	-
+	HyperVisor Launch Type:	Auto
+	HyperVisor Debugging:	No"
+16.11.2024. 17:51:09,Microsoft-Windows-Security-Auditing,5382,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+This event occurs when a user reads a stored vault credential."
+15.10.2024. 2:03:22,Microsoft-Windows-Security-Auditing,4826,Other Policy Change Events,"Boot Configuration Data loaded.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+General Settings:
+	Load Options:		-
+	Advanced Options:		No
+	Configuration Access Policy:	Default
+	System Event Logging:	No
+	Kernel Debugging:	No
+	VSM Launch Type:	Off
+
+Signature Settings:
+	Test Signing:		No
+	Flight Signing:		No
+	Disable Integrity Checks:	No
+
+HyperVisor Settings:
+	HyperVisor Load Options:	-
+	HyperVisor Launch Type:	Off
+	HyperVisor Debugging:	No"
+19.11.2024. 18:24:50,Microsoft-Windows-Security-Auditing,4648,Logon,"A logon was attempted using explicit credentials.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x754
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Network Address:	127.0.0.1
+	Port:			0
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command."
+13.11.2024. 17:32:02,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Group:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_3\ANON_ANON_USERS_13_4
+	Group Name:		ANON_ANON_USERS_13_4
+	Group Domain:		ANON_DOMAINS_3
+
+Process Information:
+	Process ID:		0x4f7c
+	Process Name:		C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.19041.4950_none_7dd913727cb4d87c\TiWorker.exe"
+16.11.2024. 18:30:28,Microsoft-Windows-Security-Auditing,4647,Logoff,"User initiated logoff:
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x356BA92
+
+This event is generated when a logoff is initiated. No further user-initiated activity can occur. This event can be interpreted as a logoff event."
+20.11.2024. 12:15:42,Microsoft-Windows-Eventlog,1100,Service shutdown,The event logging service has shut down.
+18.11.2024. 11:21:33,Microsoft-Windows-Security-Auditing,4797,User Account Management,"An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x66C1F
+
+Additional Information:
+	Caller Workstation:	ANON_MACHINES_3
+	Target Account Name:	ANON_ANON_USERS_13_7
+	Target Account Domain:	ANON_DOMAINS_9"
+24.11.2024. 20:33:13,Microsoft-Windows-Security-Auditing,5061,System Integrity,"Cryptographic operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x339E7C5
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Cryptographic Operation:
+	Operation:	Create Key.
+	Return Code:	0x0"
+13.11.2024. 17:33:06,Microsoft-Windows-Security-Auditing,4905,Audit Policy Change,"An attempt was made to unregister a security event source.
+
+Subject
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x20bc
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0xB07CEA5"
+14.11.2024. 22:49:04,Microsoft-Windows-Security-Auditing,5033,Other System Events,The Windows Firewall Driver started successfully.
+2.11.2024. 15:03:06,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Target Subject:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x2c0
+	New Process Name:	C:\Windows\System32\csrss.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x2b0
+	Creator Process Name:	C:\Windows\System32\smss.exe
+	Process Command Line:	
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the ANON_ANON_USERS_13_5 group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator."
+23.11.2024. 18:15:36,Microsoft-Windows-Security-Auditing,5382,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+This event occurs when a user reads a stored vault credential."
+9.11.2024. 1:03:41,Microsoft-Windows-Security-Auditing,5024,Other System Events,The Windows Firewall service started successfully.
+24.11.2024. 16:37:55,Microsoft-Windows-Security-Auditing,4616,Security State Change,"The system time was changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		LOCAL SERVICE
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E5
+
+Process Information:
+	Process ID:	0x34f8
+	Name:		C:\Windows\System32\svchost.exe
+
+Previous Time:		‎2024‎-‎11‎-‎24T15:37:55.842465300Z
+New Time:		‎2024‎-‎11‎-‎24T15:37:55.842743200Z
+
+This event is generated when the system time is changed. It is normal for the Windows Time Service, which runs with System privilege, to change the system time on a regular basis. Other system time changes may be indicative of attempts to tamper with the computer."
+22.11.2024. 23:18:34,Microsoft-Windows-Security-Auditing,5024,Other System Events,The Windows Firewall service started successfully.
+6.11.2024. 18:19:37,Microsoft-Windows-Security-Auditing,4905,Audit Policy Change,"An attempt was made to unregister a security event source.
+
+Subject
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x29b4
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0x3174A4C"
+2.11.2024. 15:03:06,Microsoft-Windows-Security-Auditing,4902,Audit Policy Change,"The Per-user audit policy table was created.
+
+Number of Elements:	0
+Policy ID:	0xF0BE"
+13.11.2024. 17:33:06,Microsoft-Windows-Security-Auditing,4904,Audit Policy Change,"An attempt was made to register a security event source.
+
+Subject :
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x20bc
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0xB07CEA5"
+14.11.2024. 20:54:52,Microsoft-Windows-Eventlog,1100,Service shutdown,The event logging service has shut down.
+23.11.2024. 23:32:50,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	ANON_USERS_2		ANON_DOMAINS_4\ANON_USERS_11
+	Account Name:		ANON_USERS_11
+	Account Domain:		ANON_DOMAINS_4
+	Logon ID:		0x113A4D1F
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer."
+4.11.2024. 7:47:46,Microsoft-Windows-Security-Auditing,4826,Other Policy Change Events,"Boot Configuration Data loaded.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+General Settings:
+	Load Options:		-
+	Advanced Options:		No
+	Configuration Access Policy:	Default
+	System Event Logging:	No
+	Kernel Debugging:	No
+	VSM Launch Type:	Auto
+
+Signature Settings:
+	Test Signing:		No
+	Flight Signing:		No
+	Disable Integrity Checks:	No
+
+HyperVisor Settings:
+	HyperVisor Load Options:	-
+	HyperVisor Launch Type:	Auto
+	HyperVisor Debugging:	No"
+4.10.2024. 17:25:50,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		NETWORK SERVICE
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E4
+	Read Operation:		Enumerate Credentials
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+23.11.2024. 10:20:12,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0xBD05081
+
+User:
+	ANON_ANON_USERS_13_2		ANON_MACHINES_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+
+Process Information:
+	Process ID:		0x4690
+	Process Name:		C:\Windows\explorer.exe"
+23.11.2024. 23:55:28,Microsoft-Windows-Security-Auditing,4647,Logoff,"User initiated logoff:
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x21B7A76
+
+This event is generated when a logoff is initiated. No further user-initiated activity can occur. This event can be interpreted as a logoff event."
+20.11.2024. 14:06:26,Microsoft-Windows-Security-Auditing,4826,Other Policy Change Events,"Boot Configuration Data loaded.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+General Settings:
+	Load Options:		-
+	Advanced Options:		No
+	Configuration Access Policy:	Default
+	System Event Logging:	No
+	Kernel Debugging:	No
+	VSM Launch Type:	Off
+
+Signature Settings:
+	Test Signing:		No
+	Flight Signing:		No
+	Disable Integrity Checks:	No
+
+HyperVisor Settings:
+	HyperVisor Load Options:	-
+	HyperVisor Launch Type:	Off
+	HyperVisor Debugging:	No"
+30.10.2024. 13:34:51,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+10.11.2024. 18:10:27,Microsoft-Windows-Security-Auditing,5059,Other System Events,"Key migration operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x3EAF389
+
+Process Information:
+	Process ID:		18544
+	Process Creation Time:	‎2024‎-‎11‎-‎10T17:10:15.922979100Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Additional Information:
+	Operation:	Export of persistent cryptographic key.
+	Return Code:	0x0"
+15.10.2024. 2:03:27,Microsoft-Windows-Security-Auditing,4902,Audit Policy Change,"The Per-user audit policy table was created.
+
+Number of Elements:	0
+Policy ID:	0xEF28"
+13.11.2024. 2:18:58,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x300
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+16.11.2024. 9:46:05,Microsoft-Windows-Security-Auditing,4608,Security State Change,"Windows is starting up.
+
+This event is logged when LSASS.EXE starts and the auditing subsystem is initialized."
+3.11.2024. 12:45:10,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x340
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+11.11.2024. 22:43:32,Microsoft-Windows-Security-Auditing,4616,Security State Change,"The system time was changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		LOCAL SERVICE
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E5
+
+Process Information:
+	Process ID:	0x52f0
+	Name:		C:\Windows\System32\svchost.exe
+
+Previous Time:		‎2024‎-‎11‎-‎11T21:43:32.941570400Z
+New Time:		‎2024‎-‎11‎-‎11T21:43:32.942244400Z
+
+This event is generated when the system time is changed. It is normal for the Windows Time Service, which runs with System privilege, to change the system time on a regular basis. Other system time changes may be indicative of attempts to tamper with the computer."
+24.11.2024. 9:46:07,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	ANON_USERS_2		SYSTEM
+	Account Name:		ANON_USERS_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	ANON_USERS_2		NULL SID
+	Account Name:		ANON_USERS_1
+	Account Domain:		ANON_DOMAINS_1
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x6ec
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	ANON_MACHINES_1
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+29.9.2024. 20:46:51,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0x778851A
+
+User:
+	ANON_ANON_USERS_13_2		ANON_MACHINES_2\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+
+Process Information:
+	Process ID:		0x2ae8
+	Process Name:		C:\Windows\explorer.exe"
+4.11.2024. 23:52:08,Microsoft-Windows-Security-Auditing,4797,User Account Management,"An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x1F1F7A
+
+Additional Information:
+	Caller Workstation:	ANON_MACHINES_3
+	Target Account Name:	ANON_ANON_USERS_13_7
+	Target Account Domain:	ANON_DOMAINS_9"
+17.11.2024. 21:03:45,Microsoft-Windows-Security-Auditing,4616,Security State Change,"The system time was changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		LOCAL SERVICE
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E5
+
+Process Information:
+	Process ID:	0x708
+	Name:		C:\Windows\System32\svchost.exe
+
+Previous Time:		‎2024‎-‎11‎-‎17T20:03:45.730983700Z
+New Time:		‎2024‎-‎11‎-‎17T20:03:45.731416700Z
+
+This event is generated when the system time is changed. It is normal for the Windows Time Service, which runs with System privilege, to change the system time on a regular basis. Other system time changes may be indicative of attempts to tamper with the computer."
+17.11.2024. 0:55:32,Microsoft-Windows-Security-Auditing,5058,Other System Events,"Key file operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:		3616
+	Process Creation Time:	‎2024‎-‎11‎-‎16T23:55:31.726203400Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	d1542471-6373-78ff-1f35-57382b1f6509
+	Key Type:	User key.
+
+Key File Operation Information:
+	File Path:	C:\ProgramData\Microsoft\Crypto\SystemKeys\98596e81fb95e841e06e9a26b67c831a_565506b2-4fbe-47a4-ba1f-dcaf980241a6
+	Operation:	Read persisted key from file.
+	Return Code:	0x0"
+22.11.2024. 23:18:23,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Target Subject:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x84
+	New Process Name:	Registry
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x4
+	Creator Process Name:	
+	Process Command Line:	
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the ANON_ANON_USERS_13_5 group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator."
+15.11.2024. 21:48:23,Microsoft-Windows-Security-Auditing,4907,Audit Policy Change,"Auditing settings on object were changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Object:
+	Object Server:	Security
+	Object Type:	File
+	Object Name:	C:\Windows\servicing\Packages\Multimedia-MFCore-WCOSHeadless-Package~31bf3856ad364e35~amd64~~10.0.22621.4455.cat
+	Handle ID:	0x7e4
+
+Process Information:
+	Process ID:	0x4174
+	Process Name:	C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.22621.4383_none_e957b12c42d242a6\TiWorker.exe
+
+Auditing Settings:
+	Original Security Descriptor:	S:AI(AU;SAFA;0x1f0116;;;WD)
+	New Security Descriptor:"
+16.11.2024. 9:58:31,Microsoft-Windows-Security-Auditing,4797,User Account Management,"An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0x17F2F6
+
+Additional Information:
+	Caller Workstation:	ANON_MACHINES_1
+	Target Account Name:	Guest
+	Target Account Domain:	ANON_DOMAINS_1"
+17.10.2024. 13:42:23,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0xB467BA
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer."
+16.11.2024. 11:49:00,Microsoft-Windows-Security-Auditing,4797,User Account Management,"An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x356BA92
+
+Additional Information:
+	Caller Workstation:	ANON_MACHINES_3
+	Target Account Name:	Guest
+	Target Account Domain:	ANON_DOMAINS_9"
+20.11.2024. 12:14:51,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+User:
+	ANON_ANON_USERS_13_2		ANON_MACHINES_2\Guest
+	Account Name:		Guest
+	Account Domain:		ANON_DOMAINS_8
+
+Process Information:
+	Process ID:		0x930
+	Process Name:		C:\Windows\System32\svchost.exe"
+14.11.2024. 22:48:57,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Target Subject:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x300
+	New Process Name:	C:\Windows\System32\csrss.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x2f0
+	Creator Process Name:	C:\Windows\System32\smss.exe
+	Process Command Line:	
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the ANON_ANON_USERS_13_5 group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator."
+23.11.2024. 16:25:59,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0x113C361E
+	Read Operation:		Enumerate Credentials
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+29.10.2024. 11:57:06,Microsoft-Windows-Security-Auditing,5059,Other System Events,"Key migration operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x3B3B4A8
+
+Process Information:
+	Process ID:		16692
+	Process Creation Time:	‎2024‎-‎10‎-‎29T10:55:30.914012000Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Additional Information:
+	Operation:	Export of persistent cryptographic key.
+	Return Code:	0x0"
+5.11.2024. 1:24:23,Microsoft-Windows-Security-Auditing,4648,Logon,"A logon was attempted using explicit credentials.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		ANON_ANON_USERS_13_19
+	Account Domain:		ANON_DOMAINS_5
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x4408
+	Process Name:		C:\Windows\System32\winlogon.exe
+
+Network Information:
+	Network Address:	-
+	Port:			-
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command."
+23.9.2024. 20:40:18,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0x778851A
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006E
+	Sub Status:		0xC000006E
+
+Process Information:
+	Caller Process ID:	0x32a4
+	Caller Process Name:	C:\Program Files\Google\Chrome\Application\chrome.exe
+
+Network Information:
+	Workstation Name:	ANON_MACHINES_2
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+12.11.2024. 1:16:54,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+User:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+
+Process Information:
+	Process ID:		0x7e0
+	Process Name:		C:\Windows\System32\svchost.exe"
+9.11.2024. 1:03:34,Microsoft-Windows-Security-Auditing,4902,Audit Policy Change,"The Per-user audit policy table was created.
+
+Number of Elements:	0
+Policy ID:	0xD8E4"
+8.11.2024. 15:19:53,Microsoft-Windows-Security-Auditing,4648,Logon,"A logon was attempted using explicit credentials.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		ANON_ANON_USERS_13_11
+	Account Domain:		ANON_DOMAINS_4
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x1a84
+	Process Name:		C:\Windows\System32\winlogon.exe
+
+Network Information:
+	Network Address:	-
+	Port:			-
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command."
+13.11.2024. 17:32:10,Microsoft-Windows-Security-Auditing,4904,Audit Policy Change,"An attempt was made to register a security event source.
+
+Subject :
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x20bc
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0xAF4E78C"
+11.11.2024. 10:18:34,Microsoft-Windows-Security-Auditing,4616,Security State Change,"The system time was changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		LOCAL SERVICE
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E5
+
+Process Information:
+	Process ID:	0x3ee0
+	Name:		C:\Windows\System32\svchost.exe
+
+Previous Time:		‎2024‎-‎11‎-‎11T09:18:36.146112100Z
+New Time:		‎2024‎-‎11‎-‎11T09:18:34.821176300Z
+
+This event is generated when the system time is changed. It is normal for the Windows Time Service, which runs with System privilege, to change the system time on a regular basis. Other system time changes may be indicative of attempts to tamper with the computer."
+17.11.2024. 10:51:32,Microsoft-Windows-Security-Auditing,5382,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+This event occurs when a user reads a stored vault credential."
+9.11.2024. 19:42:30,Microsoft-Windows-Security-Auditing,5058,Other System Events,"Key file operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x20076BF
+
+Process Information:
+	Process ID:		15984
+	Process Creation Time:	‎2024‎-‎11‎-‎09T18:42:25.671127300Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Key File Operation Information:
+	File Path:	C:\ANON_USERS_13\ANON_ANON_USERS_13_38\AppData\Local\Packages\microsoft.windows.search_cw5n1h2txyewy\AC\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_565506b2-4fbe-47a4-ba1f-dcaf980241a6_94010fb48af238f6ca3f233fc31d9c4f
+	Operation:	Read persisted key from file.
+	Return Code:	0x0"
+23.11.2024. 18:05:57,Microsoft-Windows-Security-Auditing,4797,User Account Management,"An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0x113C361E
+
+Additional Information:
+	Caller Workstation:	ANON_MACHINES_1
+	Target Account Name:	Guest
+	Target Account Domain:	ANON_DOMAINS_1"
+16.11.2024. 9:46:06,Microsoft-Windows-Security-Auditing,5033,Other System Events,The Windows Firewall Driver started successfully.
+16.11.2024. 0:06:59,Microsoft-Windows-Security-Auditing,4826,Other Policy Change Events,"Boot Configuration Data loaded.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+General Settings:
+	Load Options:		-
+	Advanced Options:		No
+	Configuration Access Policy:	Default
+	System Event Logging:	No
+	Kernel Debugging:	No
+	VSM Launch Type:	Off
+
+Signature Settings:
+	Test Signing:		No
+	Flight Signing:		No
+	Disable Integrity Checks:	No
+
+HyperVisor Settings:
+	HyperVisor Load Options:	-
+	HyperVisor Launch Type:	Off
+	HyperVisor Debugging:	No"
+2.11.2024. 15:02:45,Microsoft-Windows-Eventlog,1100,Service shutdown,The event logging service has shut down.
+14.11.2024. 22:48:52,Microsoft-Windows-Security-Auditing,4696,Process Creation,"A primary token was assigned to process.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0x4
+	Process Name:	
+
+Target Process:
+	Target Process ID:	0x84
+	Target Process Name:	Registry
+
+New Token Information:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7"
+16.11.2024. 9:46:12,Microsoft-Windows-Security-Auditing,5024,Other System Events,The Windows Firewall service started successfully.
+20.11.2024. 12:15:14,Microsoft-Windows-Security-Auditing,4907,Audit Policy Change,"Auditing settings on object were changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Object:
+	Object Server:	Security
+	Object Type:	File
+	Object Name:	C:\Windows\WinSxS\FileMaps\ANON_USERS_13_default_music_4066f7392302d756.cdf-ms
+	Handle ID:	0x9c
+
+Process Information:
+	Process ID:	0x45e0
+	Process Name:	C:\Windows\System32\poqexec.exe
+
+Auditing Settings:
+	Original Security Descriptor:	
+	New Security Descriptor:		S:ARAI(AU;SAFA;0x1f0116;;;WD)"
+2.11.2024. 15:02:59,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Target Subject:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x64
+	New Process Name:	Registry
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x4
+	Creator Process Name:	
+	Process Command Line:	
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the ANON_ANON_USERS_13_5 group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator."
+27.10.2024. 15:25:23,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x308
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+23.10.2024. 3:39:09,Microsoft-Windows-Security-Auditing,4647,Logoff,"User initiated logoff:
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0x6911ED2
+
+This event is generated when a logoff is initiated. No further user-initiated activity can occur. This event can be interpreted as a logoff event."
+9.11.2024. 8:40:14,Microsoft-Windows-Security-Auditing,5059,Other System Events,"Key migration operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x401DA4
+
+Process Information:
+	Process ID:		3784
+	Process Creation Time:	‎2024‎-‎11‎-‎09T07:40:14.141701600Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	Microsoft Connected Devices Platform device certificate
+	Key Type:	User key.
+
+Additional Information:
+	Operation:	Export of persistent cryptographic key.
+	Return Code:	0x0"
+4.11.2024. 7:48:22,Microsoft-Windows-Security-Auditing,5024,Other System Events,The Windows Firewall service started successfully.
+20.11.2024. 14:06:33,Microsoft-Windows-Security-Auditing,4608,Security State Change,"Windows is starting up.
+
+This event is logged when LSASS.EXE starts and the auditing subsystem is initialized."
+4.11.2024. 18:09:35,Microsoft-Windows-Security-Auditing,5382,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+This event occurs when a user reads a stored vault credential."
+30.10.2024. 22:33:46,Microsoft-Windows-Security-Auditing,5058,Other System Events,"Key file operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x60CA810
+
+Process Information:
+	Process ID:		9720
+	Process Creation Time:	‎2024‎-‎10‎-‎30T21:33:43.489726600Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Key File Operation Information:
+	File Path:	C:\ANON_USERS_13\ANON_ANON_USERS_13_38\AppData\Roaming\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_565506b2-4fbe-47a4-ba1f-dcaf980241a6
+	Operation:	Read persisted key from file.
+	Return Code:	0x0"
+29.9.2024. 17:02:19,Microsoft-Windows-Security-Auditing,4616,Security State Change,"The system time was changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		LOCAL SERVICE
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E5
+
+Process Information:
+	Process ID:	0x49b8
+	Name:		C:\Windows\System32\svchost.exe
+
+Previous Time:		‎2024‎-‎09‎-‎29T15:02:20.617114000Z
+New Time:		‎2024‎-‎09‎-‎29T15:02:19.307067400Z
+
+This event is generated when the system time is changed. It is normal for the Windows Time Service, which runs with System privilege, to change the system time on a regular basis. Other system time changes may be indicative of attempts to tamper with the computer."
+13.11.2024. 7:55:10,Microsoft-Windows-Security-Auditing,5061,System Integrity,"Cryptographic operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0xA5AF0EC
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Cryptographic Operation:
+	Operation:	Open Key.
+	Return Code:	0x0"
+15.10.2024. 2:03:08,Microsoft-Windows-Eventlog,1100,Service shutdown,The event logging service has shut down.
+28.9.2024. 22:38:47,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0x778851A
+
+User:
+	ANON_ANON_USERS_13_2		ANON_MACHINES_2\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+
+Process Information:
+	Process ID:		0x2ae8
+	Process Name:		C:\Windows\explorer.exe"
+6.11.2024. 18:18:39,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x374
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+14.11.2024. 22:48:57,Microsoft-Windows-Security-Auditing,4902,Audit Policy Change,"The Per-user audit policy table was created.
+
+Number of Elements:	0
+Policy ID:	0xD66F"
+20.11.2024. 14:06:42,Microsoft-Windows-Security-Auditing,5024,Other System Events,The Windows Firewall service started successfully.
+21.11.2024. 10:34:48,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Group:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_3\ANON_ANON_USERS_13_5
+	Group Name:		ANON_ANON_USERS_13_5
+	Group Domain:		ANON_DOMAINS_3
+
+Process Information:
+	Process ID:		0x3644
+	Process Name:		C:\Windows\System32\VSSVC.exe"
+11.11.2024. 19:00:03,Microsoft-Windows-Security-Auditing,4647,Logoff,"User initiated logoff:
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x5740A66
+
+This event is generated when a logoff is initiated. No further user-initiated activity can occur. This event can be interpreted as a logoff event."
+20.11.2024. 17:14:37,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Group:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_3\ANON_ANON_USERS_13_5
+	Group Name:		ANON_ANON_USERS_13_5
+	Group Domain:		ANON_DOMAINS_3
+
+Process Information:
+	Process ID:		0x6f0
+	Process Name:		C:\Windows\System32\svchost.exe"
+5.11.2024. 22:49:29,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0xE14228
+
+User:
+	ANON_ANON_USERS_13_2		ANON_MACHINES_2\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+
+Process Information:
+	Process ID:		0x139c
+	Process Name:		C:\Windows\explorer.exe"
+22.11.2024. 20:53:40,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0xBD05081
+	Read Operation:		Enumerate Credentials
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+16.11.2024. 0:07:09,Microsoft-Windows-Security-Auditing,5033,Other System Events,The Windows Firewall Driver started successfully.
+18.11.2024. 1:04:38,Microsoft-Windows-Security-Auditing,4648,Logon,"A logon was attempted using explicit credentials.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		ANON_ANON_USERS_13_15
+	Account Domain:		ANON_DOMAINS_5
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x4d78
+	Process Name:		C:\Windows\System32\winlogon.exe
+
+Network Information:
+	Network Address:	-
+	Port:			-
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command."
+4.11.2024. 7:48:21,Microsoft-Windows-Security-Auditing,5033,Other System Events,The Windows Firewall Driver started successfully.
+22.11.2024. 12:36:35,Microsoft-Windows-Security-Auditing,4647,Logoff,"User initiated logoff:
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0x98C55F
+
+This event is generated when a logoff is initiated. No further user-initiated activity can occur. This event can be interpreted as a logoff event."
+16.11.2024. 17:41:56,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x6ec
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	ANON_MACHINES_1
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+24.11.2024. 13:01:50,Microsoft-Windows-Security-Auditing,4905,Audit Policy Change,"An attempt was made to unregister a security event source.
+
+Subject
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x1f68
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0x3C04B11"
+4.11.2024. 7:48:15,Microsoft-Windows-Security-Auditing,4902,Audit Policy Change,"The Per-user audit policy table was created.
+
+Number of Elements:	0
+Policy ID:	0xDA17"
+23.9.2024. 20:44:09,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0x778851A
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006E
+	Sub Status:		0xC000006E
+
+Process Information:
+	Caller Process ID:	0x32a4
+	Caller Process Name:	C:\Program Files\Google\Chrome\Application\chrome.exe
+
+Network Information:
+	Workstation Name:	ANON_MACHINES_2
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+24.10.2024. 18:01:26,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0x6BCAD13
+
+User:
+	ANON_ANON_USERS_13_2		ANON_MACHINES_2\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+
+Process Information:
+	Process ID:		0x1558
+	Process Name:		C:\Windows\explorer.exe"
+16.11.2024. 0:07:07,Microsoft-Windows-Security-Auditing,4902,Audit Policy Change,"The Per-user audit policy table was created.
+
+Number of Elements:	0
+Policy ID:	0xE336"
+4.11.2024. 11:10:02,Microsoft-Windows-Security-Auditing,4616,Security State Change,"The system time was changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		LOCAL SERVICE
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E5
+
+Process Information:
+	Process ID:	0x23c8
+	Name:		C:\Windows\System32\svchost.exe
+
+Previous Time:		‎2024‎-‎11‎-‎04T10:10:02.516778700Z
+New Time:		‎2024‎-‎11‎-‎04T10:10:02.517315000Z
+
+This event is generated when the system time is changed. It is normal for the Windows Time Service, which runs with System privilege, to change the system time on a regular basis. Other system time changes may be indicative of attempts to tamper with the computer."
+20.11.2024. 14:06:39,Microsoft-Windows-Security-Auditing,5033,Other System Events,The Windows Firewall Driver started successfully.
+16.11.2024. 20:23:03,Microsoft-Windows-Security-Auditing,5061,System Integrity,"Cryptographic operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x4907088
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Cryptographic Operation:
+	Operation:	Open Key.
+	Return Code:	0x0"
+6.11.2024. 0:38:12,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+14.11.2024. 22:48:57,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	ANON_ANON_USERS_13_2		NETWORK SERVICE
+	Account Name:		NETWORK SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E4
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x340
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+12.11.2024. 0:33:12,Microsoft-Windows-Security-Auditing,5059,Other System Events,"Key migration operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x6E1C69A
+
+Process Information:
+	Process ID:		7548
+	Process Creation Time:	‎2024‎-‎11‎-‎11T23:33:07.287666600Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Additional Information:
+	Operation:	Export of persistent cryptographic key.
+	Return Code:	0x0"
+21.11.2024. 19:39:41,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x6ec
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	ANON_MACHINES_1
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+16.11.2024. 0:07:07,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Target Subject:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x2e8
+	New Process Name:	C:\Windows\System32\csrss.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x2d4
+	Creator Process Name:	C:\Windows\System32\smss.exe
+	Process Command Line:	
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the ANON_ANON_USERS_13_5 group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator."
+15.10.2024. 2:03:32,Microsoft-Windows-Security-Auditing,5033,Other System Events,The Windows Firewall Driver started successfully.
+24.11.2024. 13:01:50,Microsoft-Windows-Security-Auditing,4904,Audit Policy Change,"An attempt was made to register a security event source.
+
+Subject :
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x1f68
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0x3C04B11"
+16.11.2024. 9:48:30,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x6ec
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	ANON_MACHINES_1
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+2.11.2024. 15:02:59,Microsoft-Windows-Security-Auditing,4826,Other Policy Change Events,"Boot Configuration Data loaded.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+General Settings:
+	Load Options:		-
+	Advanced Options:		No
+	Configuration Access Policy:	Default
+	System Event Logging:	No
+	Kernel Debugging:	No
+	VSM Launch Type:	Off
+
+Signature Settings:
+	Test Signing:		No
+	Flight Signing:		No
+	Disable Integrity Checks:	No
+
+HyperVisor Settings:
+	HyperVisor Load Options:	-
+	HyperVisor Launch Type:	Off
+	HyperVisor Debugging:	No"
+15.11.2024. 21:46:19,Microsoft-Windows-Security-Auditing,4907,Audit Policy Change,"Auditing settings on object were changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Object:
+	Object Server:	Security
+	Object Type:	File
+	Object Name:	C:\Windows\servicing\Packages\Microsoft-Windows-LanguageFeatures-OCR-sr-latn-rs-Package~31bf3856ad364e35~amd64~~10.0.22621.4455.cat
+	Handle ID:	0x768
+
+Process Information:
+	Process ID:	0x4174
+	Process Name:	C:\Windows\WinSxS\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.22621.4383_none_e957b12c42d242a6\TiWorker.exe
+
+Auditing Settings:
+	Original Security Descriptor:	
+	New Security Descriptor:		S:ARAI(AU;SAFA;0x1f0116;;;WD)"
+16.11.2024. 0:06:44,Microsoft-Windows-Eventlog,1100,Service shutdown,The event logging service has shut down.
+2.11.2024. 15:02:59,Microsoft-Windows-Security-Auditing,4696,Process Creation,"A primary token was assigned to process.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0x4
+	Process Name:	
+
+Target Process:
+	Target Process ID:	0x64
+	Target Process Name:	Registry
+
+New Token Information:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7"
+21.10.2024. 12:42:32,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0x53D74CC
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer."
+28.10.2024. 0:55:05,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Group:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_3\ANON_ANON_USERS_13_4
+	Group Name:		ANON_ANON_USERS_13_4
+	Group Domain:		ANON_DOMAINS_3
+
+Process Information:
+	Process ID:		0x4544
+	Process Name:		C:\Windows\System32\svchost.exe"
+4.11.2024. 17:02:58,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0xE14228
+	Read Operation:		Read Credential
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+18.11.2024. 9:28:11,Microsoft-Windows-Security-Auditing,5033,Other System Events,The Windows Firewall Driver started successfully.
+4.11.2024. 13:52:26,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0xE14228
+	Read Operation:		Read Credential
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+16.11.2024. 9:48:26,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x6ec
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	ANON_MACHINES_1
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+21.11.2024. 10:34:49,Microsoft-Windows-Security-Auditing,4904,Audit Policy Change,"An attempt was made to register a security event source.
+
+Subject :
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x3644
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0x5ED4B50"
+31.10.2024. 22:27:48,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+17.11.2024. 1:03:15,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x340
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+18.11.2024. 9:28:46,Microsoft-Windows-Security-Auditing,5382,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+This event occurs when a user reads a stored vault credential."
+4.11.2024. 7:47:26,Microsoft-Windows-Eventlog,1100,Service shutdown,The event logging service has shut down.
+13.11.2024. 17:32:39,Microsoft-Windows-Security-Auditing,4905,Audit Policy Change,"An attempt was made to unregister a security event source.
+
+Subject
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x20bc
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0xAFC2069"
+13.11.2024. 17:16:38,Microsoft-Windows-Security-Auditing,5059,Other System Events,"Key migration operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0xA95C4B1
+
+Process Information:
+	Process ID:		17716
+	Process Creation Time:	‎2024‎-‎11‎-‎13T16:16:30.312653900Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Additional Information:
+	Operation:	Export of persistent cryptographic key.
+	Return Code:	0x0"
+19.11.2024. 21:13:31,Microsoft-Windows-Security-Auditing,4797,User Account Management,"An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0xE7249DF
+
+Additional Information:
+	Caller Workstation:	ANON_MACHINES_2
+	Target Account Name:	Guest
+	Target Account Domain:	ANON_DOMAINS_8"
+18.11.2024. 9:28:03,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Target Subject:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x37c
+	New Process Name:	C:\Windows\System32\lsass.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x318
+	Creator Process Name:	C:\Windows\System32\wininit.exe
+	Process Command Line:	
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the ANON_ANON_USERS_13_5 group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator."
+22.11.2024. 8:45:52,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+19.11.2024. 23:20:05,Microsoft-Windows-Security-Auditing,5061,System Integrity,"Cryptographic operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x3DB29D2
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Cryptographic Operation:
+	Operation:	Open Key.
+	Return Code:	0x0"
+23.11.2024. 21:44:48,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	ANON_USERS_2		ANON_DOMAINS_1\ANON_USERS_1
+	Account Name:		ANON_USERS_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0x113C361E
+	Read Operation:		Read Credential
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+23.9.2024. 19:55:30,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+18.11.2024. 9:28:04,Microsoft-Windows-Eventlog,1101,Event processing,Audit events have been dropped by the transport.  0
+16.11.2024. 0:07:07,Microsoft-Windows-Security-Auditing,4608,Security State Change,"Windows is starting up.
+
+This event is logged when LSASS.EXE starts and the auditing subsystem is initialized."
+2.11.2024. 13:59:58,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0xEB738CA
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer."
+5.11.2024. 10:18:29,Microsoft-Windows-Security-Auditing,5061,System Integrity,"Cryptographic operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x15CD535
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Cryptographic Operation:
+	Operation:	Create Key.
+	Return Code:	0x0"
+13.11.2024. 17:32:59,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Group:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_3\ANON_ANON_USERS_13_5
+	Group Name:		ANON_ANON_USERS_13_5
+	Group Domain:		ANON_DOMAINS_3
+
+Process Information:
+	Process ID:		0x20bc
+	Process Name:		C:\Windows\System32\VSSVC.exe"
+18.11.2024. 9:28:03,Microsoft-Windows-Security-Auditing,4608,Security State Change,"Windows is starting up.
+
+This event is logged when LSASS.EXE starts and the auditing subsystem is initialized."
+6.11.2024. 18:19:37,Microsoft-Windows-Security-Auditing,4904,Audit Policy Change,"An attempt was made to register a security event source.
+
+Subject :
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x29b4
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0x3174A4C"
+15.11.2024. 23:31:16,Microsoft-Windows-Security-Auditing,4648,Logon,"A logon was attempted using explicit credentials.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x78c
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Network Address:	127.0.0.1
+	Port:			0
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command."
+12.11.2024. 22:39:13,Microsoft-Windows-Security-Auditing,5061,System Integrity,"Cryptographic operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x996323C
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Cryptographic Operation:
+	Operation:	Create Key.
+	Return Code:	0x0"
+13.11.2024. 17:32:31,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Group:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_3\ANON_ANON_USERS_13_5
+	Group Name:		ANON_ANON_USERS_13_5
+	Group Domain:		ANON_DOMAINS_3
+
+Process Information:
+	Process ID:		0x20bc
+	Process Name:		C:\Windows\System32\VSSVC.exe"
+31.10.2024. 18:49:57,Microsoft-Windows-Security-Auditing,5058,Other System Events,"Key file operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x6C20DB0
+
+Process Information:
+	Process ID:		18624
+	Process Creation Time:	‎2024‎-‎10‎-‎31T17:49:55.158583400Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Key File Operation Information:
+	File Path:	C:\ANON_USERS_13\ANON_ANON_USERS_13_38\AppData\Roaming\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_565506b2-4fbe-47a4-ba1f-dcaf980241a6
+	Operation:	Write persisted key to file.
+	Return Code:	0x0"
+11.10.2024. 13:40:40,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		LOCAL SERVICE
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E5
+	Read Operation:		Enumerate Credentials
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+4.11.2024. 0:32:57,Microsoft-Windows-Security-Auditing,4647,Logoff,"User initiated logoff:
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0xB740573
+
+This event is generated when a logoff is initiated. No further user-initiated activity can occur. This event can be interpreted as a logoff event."
+2.11.2024. 21:43:45,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0xB147889
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer."
+18.11.2024. 9:27:58,Microsoft-Windows-Security-Auditing,4696,Process Creation,"A primary token was assigned to process.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0x4
+	Process Name:	
+
+Target Process:
+	Target Process ID:	0x84
+	Target Process Name:	Registry
+
+New Token Information:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7"
+7.11.2024. 23:28:52,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x58E82FE
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer."
+18.11.2024. 22:00:17,Microsoft-Windows-Security-Auditing,5059,Other System Events,"Key migration operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0x8CA3375
+
+Process Information:
+	Process ID:		10184
+	Process Creation Time:	‎2024‎-‎11‎-‎18T21:00:16.289875700Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	Microsoft Connected Devices Platform device certificate
+	Key Type:	User key.
+
+Additional Information:
+	Operation:	Export of persistent cryptographic key.
+	Return Code:	0x0"
+16.11.2024. 0:06:31,Microsoft-Windows-Security-Auditing,4907,Audit Policy Change,"Auditing settings on object were changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Object:
+	Object Server:	Security
+	Object Type:	File
+	Object Name:	C:\Windows\SysWOW64\wscapi.dll
+	Handle ID:	0x1c0
+
+Process Information:
+	Process ID:	0x47c4
+	Process Name:	C:\Windows\System32\poqexec.exe
+
+Auditing Settings:
+	Original Security Descriptor:	S:AINO_ACCESS_CONTROL
+	New Security Descriptor:		S:ARAI(AU;SAFA;DCLCRPCRSDWDWO;;;WD)"
+21.11.2024. 23:03:59,Microsoft-Windows-Security-Auditing,5059,Other System Events,"Key migration operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x76504CD
+
+Process Information:
+	Process ID:		2508
+	Process Creation Time:	‎2024‎-‎11‎-‎21T22:03:54.961878100Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Additional Information:
+	Operation:	Export of persistent cryptographic key.
+	Return Code:	0x0"
+2.11.2024. 15:03:15,Microsoft-Windows-Security-Auditing,5024,Other System Events,The Windows Firewall service started successfully.
+15.10.2024. 2:03:27,Microsoft-Windows-Security-Auditing,4608,Security State Change,"Windows is starting up.
+
+This event is logged when LSASS.EXE starts and the auditing subsystem is initialized."
+12.11.2024. 10:29:11,Microsoft-Windows-Security-Auditing,5058,Other System Events,"Key file operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x7EE8C19
+
+Process Information:
+	Process ID:		15012
+	Process Creation Time:	‎2024‎-‎11‎-‎12T09:29:08.196181700Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Key File Operation Information:
+	File Path:	C:\ANON_USERS_13\ANON_ANON_USERS_13_38\AppData\Roaming\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_565506b2-4fbe-47a4-ba1f-dcaf980241a6
+	Operation:	Write persisted key to file.
+	Return Code:	0x0"
+11.11.2024. 9:30:02,Microsoft-Windows-Security-Auditing,5061,System Integrity,"Cryptographic operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x5740A66
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Cryptographic Operation:
+	Operation:	Open Key.
+	Return Code:	0x0"
+16.11.2024. 10:31:10,Microsoft-Windows-Security-Auditing,5059,Other System Events,"Key migration operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0x17F2F6
+
+Process Information:
+	Process ID:		13032
+	Process Creation Time:	‎2024‎-‎11‎-‎16T09:31:06.448163400Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P384
+	Key Name:	ff6e047f-e707-46d4-8489-c5b162110a50
+	Key Type:	User key.
+
+Additional Information:
+	Operation:	Export of persistent cryptographic key.
+	Return Code:	0x0"
+13.11.2024. 17:32:10,Microsoft-Windows-Security-Auditing,4905,Audit Policy Change,"An attempt was made to unregister a security event source.
+
+Subject
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x20bc
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0xAF4E78C"
+4.11.2024. 17:50:11,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x3082C3
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer."
+20.11.2024. 23:08:16,Microsoft-Windows-Security-Auditing,5059,Other System Events,"Key migration operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x4B2C064
+
+Process Information:
+	Process ID:		19024
+	Process Creation Time:	‎2024‎-‎11‎-‎20T22:08:10.352763600Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Additional Information:
+	Operation:	Export of persistent cryptographic key.
+	Return Code:	0x0"
+20.11.2024. 17:15:23,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x754
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	ANON_MACHINES_3
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+18.11.2024. 12:07:29,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+29.9.2024. 17:02:19,Microsoft-Windows-Security-Auditing,4616,Security State Change,"The system time was changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		LOCAL SERVICE
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E5
+
+Process Information:
+	Process ID:	0x49b8
+	Name:		C:\Windows\System32\svchost.exe
+
+Previous Time:		‎2024‎-‎09‎-‎29T15:02:19.307996500Z
+New Time:		‎2024‎-‎09‎-‎29T15:02:19.309161100Z
+
+This event is generated when the system time is changed. It is normal for the Windows Time Service, which runs with System privilege, to change the system time on a regular basis. Other system time changes may be indicative of attempts to tamper with the computer."
+13.11.2024. 2:19:01,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_8
+	Account Name:		ANON_ANON_USERS_13_12
+	Account Domain:		ANON_DOMAINS_5
+	Logon ID:		0xB17F489
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer."
+22.11.2024. 23:18:34,Microsoft-Windows-Security-Auditing,5033,Other System Events,The Windows Firewall Driver started successfully.
+16.11.2024. 20:33:17,Microsoft-Windows-Security-Auditing,4904,Audit Policy Change,"An attempt was made to register a security event source.
+
+Subject :
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Process:
+	Process ID:	0x14b8
+	Process Name:	C:\Windows\System32\VSSVC.exe
+
+Event Source:
+	Source Name:	VSSAudit
+	Event Source ID:	0xF51480E"
+8.11.2024. 22:46:38,Microsoft-Windows-Security-Auditing,5382,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+This event occurs when a user reads a stored vault credential."
+16.11.2024. 0:07:13,Microsoft-Windows-Security-Auditing,5024,Other System Events,The Windows Firewall service started successfully.
+18.11.2024. 9:28:11,Microsoft-Windows-Security-Auditing,5024,Other System Events,The Windows Firewall service started successfully.
+16.11.2024. 21:06:57,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0xE7249DF
+
+User:
+	ANON_ANON_USERS_13_2		ANON_MACHINES_2\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+
+Process Information:
+	Process ID:		0x1ef8
+	Process Name:		C:\Windows\explorer.exe"
+19.11.2024. 0:49:03,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x360
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+18.11.2024. 9:28:03,Microsoft-Windows-Security-Auditing,4902,Audit Policy Change,"The Per-user audit policy table was created.
+
+Number of Elements:	0
+Policy ID:	0xD3FC"
+23.11.2024. 9:50:44,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_1\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_1
+	Logon ID:		0xBD05081
+	Read Operation:		Enumerate Credentials
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+1.11.2024. 17:17:08,Microsoft-Windows-Security-Auditing,5382,User Account Management,"Vault credentials were read.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+This event occurs when a user reads a stored vault credential."
+9.11.2024. 1:02:34,Microsoft-Windows-Eventlog,1100,Service shutdown,The event logging service has shut down.
+2.11.2024. 21:29:58,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_3
+	Account Name:		ANON_ANON_USERS_13_35
+	Account Domain:		ANON_DOMAINS_4
+	Logon ID:		0xA0FBF7E
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer."
+22.11.2024. 23:18:23,Microsoft-Windows-Security-Auditing,4826,Other Policy Change Events,"Boot Configuration Data loaded.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+General Settings:
+	Load Options:		-
+	Advanced Options:		No
+	Configuration Access Policy:	Default
+	System Event Logging:	No
+	Kernel Debugging:	No
+	VSM Launch Type:	Auto
+
+Signature Settings:
+	Test Signing:		No
+	Flight Signing:		No
+	Disable Integrity Checks:	No
+
+HyperVisor Settings:
+	HyperVisor Load Options:	-
+	HyperVisor Launch Type:	Auto
+	HyperVisor Debugging:	No"
+6.11.2024. 18:19:36,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_39
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+Group:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_3\ANON_ANON_USERS_13_4
+	Group Name:		ANON_ANON_USERS_13_4
+	Group Domain:		ANON_DOMAINS_3
+
+Process Information:
+	Process ID:		0x29b4
+	Process Name:		C:\Windows\System32\VSSVC.exe"
+20.11.2024. 14:06:33,Microsoft-Windows-Security-Auditing,4902,Audit Policy Change,"The Per-user audit policy table was created.
+
+Number of Elements:	0
+Policy ID:	0xF3D0"
+16.11.2024. 0:06:59,Microsoft-Windows-Security-Auditing,4696,Process Creation,"A primary token was assigned to process.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0x4
+	Process Name:	
+
+Target Process:
+	Target Process ID:	0x68
+	Target Process Name:	Registry
+
+New Token Information:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7"
+14.11.2024. 22:48:57,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Target Subject:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x2f0
+	New Process Name:	C:\Windows\System32\smss.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x1f8
+	Creator Process Name:	C:\Windows\System32\smss.exe
+	Process Command Line:	
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the ANON_ANON_USERS_13_5 group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator."
+17.10.2024. 15:31:05,Microsoft-Windows-Security-Auditing,4797,User Account Management,"An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_DOMAINS_8\ANON_ANON_USERS_13_1
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon ID:		0x1D0132
+
+Additional Information:
+	Caller Workstation:	ANON_MACHINES_2
+	Target Account Name:	ANON_ANON_USERS_13_7
+	Target Account Domain:	ANON_DOMAINS_8"
+5.11.2024. 17:51:44,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+9.11.2024. 1:03:41,Microsoft-Windows-Security-Auditing,5033,Other System Events,The Windows Firewall Driver started successfully.
+2.11.2024. 1:08:56,Microsoft-Windows-Security-Auditing,4648,Logon,"A logon was attempted using explicit credentials.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		ANON_ANON_USERS_13_8
+	Account Domain:		ANON_DOMAINS_4
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x2230
+	Process Name:		C:\Windows\System32\winlogon.exe
+
+Network Information:
+	Network Address:	-
+	Port:			-
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command."
+23.11.2024. 18:15:52,Microsoft-Windows-Security-Auditing,5059,Other System Events,"Key migration operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x21B7A76
+
+Process Information:
+	Process ID:		17460
+	Process Creation Time:	‎2024‎-‎11‎-‎23T17:15:45.409783600Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	ECDSA_P256
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Additional Information:
+	Operation:	Export of persistent cryptographic key.
+	Return Code:	0x0"
+1.11.2024. 9:30:08,Microsoft-Windows-Security-Auditing,5058,Other System Events,"Key file operation.
+
+Subject:
+	ANON_ANON_USERS_13_2		ANON_SIDS_18
+	Account Name:		ANON_ANON_USERS_13_38
+	Account Domain:		ANON_DOMAINS_9
+	Logon ID:		0x8419B0B
+
+Process Information:
+	Process ID:		19976
+	Process Creation Time:	‎2024‎-‎11‎-‎01T08:28:07.341848800Z
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	ChromeMetricsTestKey
+	Key Type:	User key.
+
+Key File Operation Information:
+	File Path:	C:\ANON_USERS_13\ANON_ANON_USERS_13_38\AppData\Local\Packages\microsoft.windows.search_cw5n1h2txyewy\AC\Microsoft\Crypto\Keys\1e313dfb17707690d41bc1ce552b952a_565506b2-4fbe-47a4-ba1f-dcaf980241a6_94010fb48af238f6ca3f233fc31d9c4f
+	Operation:	Read persisted key from file.
+	Return Code:	0x0"
+17.11.2024. 21:44:42,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_3
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+
+User:
+	ANON_ANON_USERS_13_2		ANON_MACHINES_1\Administrator
+	Account Name:		Administrator
+	Account Domain:		ANON_DOMAINS_1
+
+Process Information:
+	Process ID:		0x34fc
+	Process Name:		C:\Windows\System32\taskhostw.exe"
+16.11.2024. 9:46:05,Microsoft-Windows-Security-Auditing,6417,System Integrity,"The FIPS mode crypto selftests succeeded.
+
+	Process ID:		0x380
+	Process Name:		C:\Windows\System32\lsass.exe"
+11.11.2024. 10:18:34,Microsoft-Windows-Security-Auditing,4616,Security State Change,"The system time was changed.
+
+Subject:
+	ANON_ANON_USERS_13_2		LOCAL SERVICE
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E5
+
+Process Information:
+	Process ID:	0x3ee0
+	Name:		C:\Windows\System32\svchost.exe
+
+Previous Time:		‎2024‎-‎11‎-‎11T09:18:34.824878700Z
+New Time:		‎2024‎-‎11‎-‎11T09:18:34.825495300Z
+
+This event is generated when the system time is changed. It is normal for the Windows Time Service, which runs with System privilege, to change the system time on a regular basis. Other system time changes may be indicative of attempts to tamper with the computer."
+15.10.2024. 2:03:34,Microsoft-Windows-Security-Auditing,5024,Other System Events,The Windows Firewall service started successfully.
+8.11.2024. 13:04:11,Microsoft-Windows-Security-Auditing,4648,Logon,"A logon was attempted using explicit credentials.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		ANON_ANON_USERS_13_32
+	Account Domain:		ANON_DOMAINS_2
+	Logon ID:		0x3E7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		ANON_ANON_USERS_13_1
+	Account Domain:		ANON_DOMAINS_8
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x930
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Network Address:	127.0.0.1
+	Port:			0
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account’s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command."
+4.11.2024. 7:47:46,Microsoft-Windows-Security-Auditing,4696,Process Creation,"A primary token was assigned to process.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0x4
+	Process Name:	
+
+Target Process:
+	Target Process ID:	0x84
+	Target Process Name:	Registry
+
+New Token Information:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7"
+16.11.2024. 9:46:00,Microsoft-Windows-Security-Auditing,4696,Process Creation,"A primary token was assigned to process.
+
+Subject:
+	ANON_ANON_USERS_13_2		SYSTEM
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7
+
+Process Information:
+	Process ID:	0x4
+	Process Name:	
+
+Target Process:
+	Target Process ID:	0x68
+	Target Process Name:	Registry
+
+New Token Information:
+	ANON_ANON_USERS_13_2		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x3E7"
