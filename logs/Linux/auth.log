@@ -1,0 +1,118 @@
+2026-11-10T16:21:19.816027-08:00 xps sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2026-11-10T16:21:19.816484-08:00 xps sudo: root :  PWD=/ ; USER=root ; COMMAND=/usr/bin/usbreset 045e:0040
+2026-11-10T16:21:20.425595-08:00 xps sudo: pam_unix(sudo:session): session closed for user root
+2026-11-10T16:21:20.435153-08:00 xps sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2026-11-10T16:21:20.435208-08:00 xps sudo: root :  PWD=/ ; USER=root ; COMMAND=/usr/bin/usbreset 0bda:8153
+2026-11-10T16:21:20.531787-08:00 xps sudo: pam_unix(sudo:session): session closed for user root
+2026-11-10T16:21:20.556235-08:00 xps systemd-logind[6282]: Operation 'suspend' finished.
+2026-11-10T16:21:24.628760-08:00 xps gdm-password]: gkr-pam: unlocked login keyring
+2026-11-10T16:22:24.992672-08:00 xps pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by ed(uid=1000)
+2026-11-10T16:22:24.993926-08:00 xps pkexec[962615]: ed: Executing command [USER=root] [TTY=unknown] [CWD=/home/ed] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-11-10T16:25:25.160058-08:00 xps pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by ed(uid=1000)
+2026-11-10T16:25:25.161053-08:00 xps pkexec[971512]: ed: Executing command [USER=root] [TTY=unknown] [CWD=/home/ed] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-11-10T16:28:24.691178-08:00 xps pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by ed(uid=1000)
+2026-11-10T16:28:24.691845-08:00 xps pkexec[986942]: ed: Executing command [USER=root] [TTY=unknown] [CWD=/home/ed] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-11-10T16:30:01.437674-08:00 xps CRON[988625]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-10T16:30:01.443746-08:00 xps CRON[988625]: pam_unix(cron:session): session closed for user root
+2026-11-10T16:31:25.634357-08:00 xps pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by ed(uid=1000)
+2026-11-10T16:31:25.635080-08:00 xps pkexec[989227]: ed: Executing command [USER=root] [TTY=unknown] [CWD=/home/ed] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-11-10T17:17:01.461393-08:00 xps CRON[1007538]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-10T17:17:01.473760-08:00 xps CRON[1007538]: pam_unix(cron:session): session closed for user root
+2026-11-10T17:30:01.494574-08:00 xps CRON[1012893]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-10T17:30:01.507676-08:00 xps CRON[1012893]: pam_unix(cron:session): session closed for user root
+2026-11-10T18:17:01.534160-08:00 xps CRON[1032635]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-10T18:17:01.539868-08:00 xps CRON[1032635]: pam_unix(cron:session): session closed for user root
+2026-11-10T18:30:01.553723-08:00 xps CRON[1036941]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-10T18:30:01.558914-08:00 xps CRON[1036941]: pam_unix(cron:session): session closed for user root
+2026-11-10T19:17:01.587137-08:00 xps CRON[1052670]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-10T19:17:01.599731-08:00 xps CRON[1052670]: pam_unix(cron:session): session closed for user root
+2026-11-10T19:30:01.617450-08:00 xps CRON[1056946]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-10T19:30:01.630048-08:00 xps CRON[1056946]: pam_unix(cron:session): session closed for user root
+2026-11-10T20:16:17.445863-08:00 xps systemd-logind[6282]: The system will suspend now!
+2026-11-11T07:45:19.762375-08:00 xps sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2026-11-11T07:45:19.762440-08:00 xps sudo: root :  PWD=/ ; USER=root ; COMMAND=/usr/bin/usbreset 045e:0040
+2026-11-11T07:45:20.374364-08:00 xps sudo: pam_unix(sudo:session): session closed for user root
+2026-11-11T07:45:20.383826-08:00 xps sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2026-11-11T07:45:20.383953-08:00 xps sudo: root :  PWD=/ ; USER=root ; COMMAND=/usr/bin/usbreset 0bda:8153
+2026-11-11T07:45:20.480074-08:00 xps sudo: pam_unix(sudo:session): session closed for user root
+2026-11-11T07:45:20.504994-08:00 xps systemd-logind[6282]: Operation 'suspend' finished.
+2026-11-11T07:45:28.563531-08:00 xps gdm-password]: gkr-pam: unlocked login keyring
+2026-11-11T07:46:49.329680-08:00 xps gnome-keyring-daemon[9087]: asked to register item /org/freedesktop/secrets/collection/login/38, but it's already registered
+2026-11-11T07:47:12.593929-08:00 xps gnome-keyring-daemon[9087]: asked to register item /org/freedesktop/secrets/collection/login/38, but it's already registered
+2026-11-11T07:47:32.380312-08:00 xps gnome-keyring-daemon[9087]: asked to register item /org/freedesktop/secrets/collection/login/38, but it's already registered
+2026-11-11T07:48:11.221170-08:00 xps gnome-keyring-daemon[9087]: asked to register item /org/freedesktop/secrets/collection/login/38, but it's already registered
+2026-11-11T07:48:38.675960-08:00 xps gnome-keyring-daemon[9087]: asked to register item /org/freedesktop/secrets/collection/login/42, but it's already registered
+2026-11-11T08:17:01.403115-08:00 xps CRON[1095853]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T08:17:01.419203-08:00 xps CRON[1095853]: pam_unix(cron:session): session closed for user root
+2026-11-11T08:30:01.439724-08:00 xps CRON[1102027]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T08:30:01.453193-08:00 xps CRON[1102027]: pam_unix(cron:session): session closed for user root
+2026-11-11T08:54:13.159244-08:00 xps gnome-keyring-daemon[9087]: asked to register item /org/freedesktop/secrets/collection/login/42, but it's already registered
+2026-11-11T09:17:01.473125-08:00 xps CRON[1124281]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T09:17:01.480823-08:00 xps CRON[1124281]: pam_unix(cron:session): session closed for user root
+2026-11-11T09:30:01.499261-08:00 xps CRON[1130657]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T09:30:01.505106-08:00 xps CRON[1130657]: pam_unix(cron:session): session closed for user root
+2026-11-11T10:17:01.547964-08:00 xps CRON[1150430]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T10:17:01.556652-08:00 xps CRON[1150430]: pam_unix(cron:session): session closed for user root
+2026-11-11T10:30:01.579030-08:00 xps CRON[1157049]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T10:30:01.585602-08:00 xps CRON[1157049]: pam_unix(cron:session): session closed for user root
+2026-11-11T11:17:01.613899-08:00 xps CRON[1175991]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T11:17:01.626819-08:00 xps CRON[1175991]: pam_unix(cron:session): session closed for user root
+2026-11-11T11:30:01.639412-08:00 xps CRON[1181274]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T11:30:01.646178-08:00 xps CRON[1181274]: pam_unix(cron:session): session closed for user root
+2026-11-11T12:17:01.667003-08:00 xps CRON[1198958]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T12:17:01.673454-08:00 xps CRON[1198958]: pam_unix(cron:session): session closed for user root
+2026-11-11T12:30:01.685606-08:00 xps CRON[1204202]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T12:30:01.687692-08:00 xps CRON[1204202]: pam_unix(cron:session): session closed for user root
+2026-11-11T13:17:01.710467-08:00 xps CRON[1220754]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T13:17:01.714454-08:00 xps CRON[1220754]: pam_unix(cron:session): session closed for user root
+2026-11-11T13:30:01.721485-08:00 xps CRON[1225383]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T13:30:01.734000-08:00 xps CRON[1225383]: pam_unix(cron:session): session closed for user root
+2026-11-11T14:17:01.748831-08:00 xps CRON[1242020]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T14:17:01.761231-08:00 xps CRON[1242020]: pam_unix(cron:session): session closed for user root
+2026-11-11T14:30:01.771400-08:00 xps CRON[1246323]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T14:30:01.783591-08:00 xps CRON[1246323]: pam_unix(cron:session): session closed for user root
+2026-11-11T15:04:12.641166-08:00 xps systemd-logind[6282]: The system will suspend now!
+2026-11-11T15:25:45.800935-08:00 xps sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2026-11-11T15:25:45.801033-08:00 xps sudo: root :  PWD=/ ; USER=root ; COMMAND=/usr/bin/usbreset 045e:0040
+2026-11-11T15:25:46.411617-08:00 xps sudo: pam_unix(sudo:session): session closed for user root
+2026-11-11T15:25:46.424021-08:00 xps sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2026-11-11T15:25:46.424082-08:00 xps sudo: root :  PWD=/ ; USER=root ; COMMAND=/usr/bin/usbreset 0bda:8153
+2026-11-11T15:25:46.520128-08:00 xps sudo: pam_unix(sudo:session): session closed for user root
+2026-11-11T15:25:46.552259-08:00 xps systemd-logind[6282]: Operation 'suspend' finished.
+2026-11-11T15:25:52.626278-08:00 xps gdm-password]: gkr-pam: unlocked login keyring
+2026-11-11T15:30:01.115917-08:00 xps CRON[1259632]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T15:30:01.118874-08:00 xps CRON[1259632]: pam_unix(cron:session): session closed for user root
+2026-11-11T16:17:01.132992-08:00 xps CRON[1276071]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T16:17:01.145021-08:00 xps CRON[1276071]: pam_unix(cron:session): session closed for user root
+2026-11-11T16:30:01.159167-08:00 xps CRON[1280587]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T16:30:01.163553-08:00 xps CRON[1280587]: pam_unix(cron:session): session closed for user root
+2026-11-11T17:17:01.189179-08:00 xps CRON[1296801]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T17:17:01.202666-08:00 xps CRON[1296801]: pam_unix(cron:session): session closed for user root
+2026-11-11T17:30:01.226904-08:00 xps CRON[1301173]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T17:30:01.231475-08:00 xps CRON[1301173]: pam_unix(cron:session): session closed for user root
+2026-11-11T18:17:01.253270-08:00 xps CRON[1316616]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T18:17:01.262451-08:00 xps CRON[1316616]: pam_unix(cron:session): session closed for user root
+2026-11-11T18:30:01.283746-08:00 xps CRON[1320869]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T18:30:01.296273-08:00 xps CRON[1320869]: pam_unix(cron:session): session closed for user root
+2026-11-11T19:10:18.246667-08:00 xps systemd-logind[6282]: The system will suspend now!
+2026-11-12T08:43:19.760406-08:00 xps sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2026-11-12T08:43:19.760493-08:00 xps sudo: root :  PWD=/ ; USER=root ; COMMAND=/usr/bin/usbreset 045e:0040
+2026-11-12T08:43:20.369915-08:00 xps sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T08:43:20.379535-08:00 xps sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2026-11-12T08:43:20.379613-08:00 xps sudo: root :  PWD=/ ; USER=root ; COMMAND=/usr/bin/usbreset 0bda:8153
+2026-11-12T08:43:20.478338-08:00 xps sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T08:43:22.347460-08:00 xps systemd-logind[6282]: Operation 'suspend' finished.
+2026-11-12T08:43:30.329584-08:00 xps unix_chkpwd[1334823]: password check failed for user (ed)
+2026-11-12T08:43:30.330621-08:00 xps gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname=ed uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=ed
+2026-11-12T08:43:34.993955-08:00 xps gdm-password]: gkr-pam: unlocked login keyring
+2026-11-12T09:17:01.211123-08:00 xps CRON[1349051]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-12T09:17:01.225013-08:00 xps CRON[1349051]: pam_unix(cron:session): session closed for user root
+2026-11-12T09:30:01.241497-08:00 xps CRON[1354358]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-12T09:30:01.246262-08:00 xps CRON[1354358]: pam_unix(cron:session): session closed for user root
+2026-11-12T10:16:08.616405-08:00 xps systemd-machined[6283]: New machine qemu-2-test.
+2026-11-12T10:17:01.262323-08:00 xps CRON[1373347]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-12T10:17:01.264959-08:00 xps CRON[1373347]: pam_unix(cron:session): session closed for user root
+2026-11-12T10:30:01.282545-08:00 xps CRON[1377503]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-12T10:30:01.286422-08:00 xps CRON[1377503]: pam_unix(cron:session): session closed for user root
+2026-11-12T11:17:01.314389-08:00 xps CRON[1397557]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-12T11:17:01.319348-08:00 xps CRON[1397557]: pam_unix(cron:session): session closed for user root
